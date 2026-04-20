@@ -22,11 +22,11 @@ export type Camper = {
 
   form: Form;
 
-  length: string;      // "5.6m"
-  width: string;       // "2m"
-  height: string;      // "3.1m"
-  tank: string;        // "117l"
-  consumption: string; // "15l/100km"
+  length: string;
+  width: string;
+  height: string; 
+  tank: string;
+  consumption: string;
 
   transmission: Transmission;
   engine: Engine;

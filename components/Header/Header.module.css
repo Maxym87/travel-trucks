@@ -1,0 +1,31 @@
+.header {
+    background-color: var(--hero-title);
+    width: 100%;
+    min-height: 72px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.headerContainer {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+}
+
+.icon{
+    display: block;
+    width: 136px;
+    height: 17px;
+    margin-right: 450px;
+}
+
+.navList{
+    display: flex;
+    gap: 32px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
