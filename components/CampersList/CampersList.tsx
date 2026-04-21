@@ -1,6 +1,7 @@
 
 
-const CamperList = () => {
+
+const CamperList = async () => {
 
 }
 

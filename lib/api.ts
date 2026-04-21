@@ -1,11 +1,17 @@
 
 import axios from "axios"
 
-import type {CampersResponse} from '../types/campers'
+import {CampersResponse, Camper} from '../types/campers'
+
 
 axios.defaults.baseURL = "https://campers-api.goit.study";
 
 export const getCampers = async () => {
-const res = await axios.get<CampersResponse>('/campers')
-return res.data
+const {data} = await axios.get<CampersResponse>('/campers')
+return data
+}
+
+export const getSingleCamper = async(id: string) => {
+    const {data} = await axios.get<Camper>(`/campers/${id}`)
+    return data;
 }
